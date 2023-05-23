@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.messages {
+    padding: 20px 0;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+    overflow: auto;
+    border: 2px solid #dce0e6;
+    border-radius: 20px;
+}
+
+.messages-message {
+    display: flex;
+    margin-top: 10px;
+}
+
+.messages-message.currentMember {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.message-content {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.currentMember > .message-content {
+    align-items: flex-end;
+    margin-right: 15px;
+}
+
+.message-content > .username {
+    display: block;
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+.message-content > .text {
+    padding: 10px 18px;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 1000px;
+    background-color: #567ebb;
+    color: white;
+    display: inline-block;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.currentMember > .message-content .text {
+    background-color: #dce0e6;
+    color: black;
+    font-weight: 400;
+}
+
+.character-counter {
+    text-align: center;
+    padding: 10px;
+    color: gray;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 100px;
+    border: 2px solid #dce0e6;
+    flex-grow: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid #567ebb;
+}
+
+button {
+    padding: 5px 20px;
+    font-size: 16px;
+    background-color: #dce0e6;
+    color: black;
+    border: none;
+    border-radius: 1000px;
+    margin-left: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #567ebb;
+    color: white;
+}
